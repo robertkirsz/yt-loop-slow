@@ -34,3 +34,7 @@ These don't fire while you're typing in a text field.
 | `-` / `=` | Slower / faster by 5% |
 
 YouTube's own shortcuts (`k` play/pause, `,` `.` frame step, `←` `→` seek) still work.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
