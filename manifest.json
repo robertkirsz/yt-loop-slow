@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Loop & Slow",
+  "version": "1.0.0",
+  "description": "Slow down YouTube videos and loop A–B sections for transcribing and practicing music.",
+  "permissions": ["storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Show / hide the Loop & Slow panel"
+  },
+  "commands": {
+    "toggle-panel": {
+      "suggested_key": { "default": "Alt+Shift+L" },
+      "description": "Show / hide the Loop & Slow panel"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
